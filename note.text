@@ -46,3 +46,8 @@ Installation Process:
 2. pipenv install uvicorn [ ASGI server for production]
 3  create main.py and do code inside this file
 
+
+Sever run:
+
+# uvicorn main:app --reload
+
