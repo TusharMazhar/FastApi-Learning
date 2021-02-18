@@ -4,10 +4,45 @@ FastApi:
 # Redoc UI
 # Automatic API documentation
 # Pydantic library
+# Has auto complete  extention in vscode
+# By default return Json that modern api needs
 
 Based on open standards
 # Json Schema
 # Open API
 
+Security and Authentication
+# HTTP basic
+# OAuth2 ( also with jwt token)
+# API keys in -
+    * Headers
+    * Query Parameters
+    * Cookies etc
+# Dependency Injection
+# Unlimited "plug-ins"
+# Tested
 
+StarLette Features
+# Websocket support
+# GraphQl support
+# In-progress backgroud ttask
+# startup and shutdown events
+# Test client built on requests
+# CORS,GZip,Static files, Straming reponses
+# Session and cookie support
+
+Other support 
+# Sql database
+# NoSql database
+# GraphQl
+
+
+Installation Process:
+# pip install pipenv
+# pipenv shell
+
+
+1. pipenv install fastapi 
+2. pipenv install uvicorn [ ASGI server for production]
+3  create main.py and do code inside this file
 
