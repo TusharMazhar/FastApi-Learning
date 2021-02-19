@@ -4,13 +4,15 @@ from fastapi import FastAPI
 
 from pydantic import BaseModel 
 
+# import uvicorn
+
 
 app = FastAPI()
 
-class Blog(BaseModel): # Blog model created
+class Blog(BaseModel): # Blog model created/pydantic model : debug : ctrl+shift+p
     title:str
     des:str
-    published:Optional[str]
+    published:Optional[str]=None
 
 @app.post('/')
 def home(request:Blog): # use Blog model
@@ -38,3 +40,7 @@ def read_root(id:int):
     return {"Hello": id}
 
 
+
+
+# if __name__ = "__main__":
+#     uvicorn.run(app,host="127.0.0.1",port="9000")  # Port Change
